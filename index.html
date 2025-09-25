@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Diplomski Rad Ibro Rebronja</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Zeleni Kutak</a>
+
+        <nav class="navbar">
+            <a href="#home">Početna</a>
+            <a href="#features">Prednosti</a>
+            <a href="#products">Proizvodi</a>
+            <a href="#categories">Kategorije</a>
+            <a href="#review">Recenzije</a>
+            <a href="#blogs">Blogovi</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Pretraži ovdje...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./images/watermelon.jpg" alt="watermelon">
+                <div class="content">
+                    <h3>Lubenica</h3>
+                    <span class="price">€ 20/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./images/mango.jpg" alt="mango">
+                <div class="content">
+                    <h3>Svježi Manga</h3>
+                    <span class="price">€ 100/-</span>
+                    <span class="quantity">Qty: 2</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./images/pomegranate.jpg" alt="pomegranate">
+                <div class="content">
+                    <h3>Nar</h3>
+                    <span class="price">€ 120/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="total">
+                Total: € 240/-
+            </div>
+            <a href="#" class="btn">Plaćanje</a>
+        </div>
+        <form class="login-form">
+            <h3>Prijavi se</h3>
+            <input type="email" class="box" placeholder="Email">
+            <input type="password" class="box" placeholder="Lozinka">
+            <p>Zaboravili ste lozinku? <a href="#">Kliknite ovdje</a></p>
+            <p>Nemate profil? <a href="#">Kreiraj novi profil</a></p>
+            <input type="submit" value="Prijavi se" class="btn">
+        </form>
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Svježi i <span> Organski</span> proizvodi za vas</h3>
+            <p>Namirnice na dohvat ruke: Kupujte svježe, uštedite vrijeme, jedite zdravo! Vaša online prodavnica namirnica na jednom mjestu
+                za praktičnost, kvalitet i uštedu. Otkrijte pametniji način kupovine već <span style="color: var(--orange);">Danas!</span></p>
+            <a href="#" class="btn">Kupi Sada</a>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <h1 class="heading">Naše <span>Prednosti</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/fresh.jpg" alt="Fresh Fruits">
+                <h3>Svježe i Organsko</h3>
+                <p>Jednostavno birajte zdravo.</p>
+                <a href="#" class="btn">Pročitaj Više</a>
+            </div>
+            <div class="box">
+                <img src="./images/delievery.jpg" alt="Delievery">
+                <h3>Besplatna Dostava</h3>
+                <p>Dostava direktno do vaših vrata, bez troška.</p>
+                <a href="#" class="btn">Pročitaj Više</a>
+            </div>
+            <div class="box">
+                <img src="./images/payment.jpg" alt="Payment">
+                <h3>Jednostavno Plaćanje</h3>
+                <p>Plaćajte brzo i sigurno.</p>
+                <a href="#" class="btn">Pročitaj Više</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR PRODUCTS -->
+    <section class="products" id="products">
+        <h1 class="heading">Naši <span>Proizvodi</span></h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+
+                    <img src="./images/grapes.jpg" alt="grapes">
+                    <h3>Svježe Grožđe</h3>
+                    <div class="price">€50/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./images/guava.jpg" alt="guava">
+                    <h3>Svježa Guava</h3>
+                    <div class="price">€50/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./images/watermelon.jpg" alt="mango">
+                    <h3>Lubenica</h3>
+                    <div class="price">€20/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./images/mango.jpg" alt="mango">
+                    <h3>Svježi Manga</h3>
+                    <div class="price">€50/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./images/mango.jpg" alt="mango">
+                    <h3>Svježi Manga</h3>
+                    <div class="price">€50/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                
+            </div>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./images/grapes.jpg" alt="grapes">
+                    <h3>Fresh Grapes</h3>
+                    <div class="price">€50/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./images/guava.jpg" alt="guava">
+                    <h3>Fresh Guava</h3>
+                    <div class="price">€50/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./images/mango.jpg" alt="mango">
+                    <h3>Svježi Manga</h3>
+                    <div class="price">€50/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./images/mango.jpg" alt="mango">
+                    <h3>Svježi Manga</h3>
+                    <div class="price">€50/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./images/mango.jpg" alt="mango">
+                    <h3>Svježi Manga</h3>
+                    <div class="price">€50/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Dodaj u korpu</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="categories" id="categories">
+        <h1 class="heading">Kategorije <span>Proizvoda</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/voce.jpg" alt="">
+                <h3>Voće</h3>
+                <a href="#" class="btn">Izaberi</a>
+            </div>
+            <div class="box">
+                <img src="./images/povrce.webp" alt="">
+                <h3>Povrće</h3>
+                <a href="#" class="btn">Izaberi</a>
+            </div>
+            <div class="box">
+                <img src="./images/Mlijeko i Mliječni Proizvodi.jpg" alt="">
+                <h3>Mlijeko i Mliječni Proizvodi</h3>
+                <a href="#" class="btn">Izaberi</a>
+            </div>
+            <div class="box">
+                <img src="./images/Hljeb i peciva.jpg" alt="">
+                <h3>Hljeb i peciva</h3>
+                <a href="#" class="btn">Izaberi</a>
+            </div>
+        </div>
+    </section>
+    <section class="review" id="review">
+        <h1 class="heading"><span>Recenzije</span> Kupaca </h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+        
+                    <img src="./images/Emir Hadzihafizbegovic.jpg" alt="">
+                    <p>Svježina je nevjerovatna, top proizvodi!</p>
+                    <h3>Emir Hadzihafizbegovic</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+        
+                    <img src="./images/Rijad Gvozden.jpg" alt="">
+                    <p>Sjajna kvaliteta i brza dostava. Topla preporuka!</p>
+                    <h3>Rijad Gvozden</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+        
+                    <img src="./images/Ermin Bravo.jpg" alt="">
+                    <p>Organsko povrće nikad nije bilo bolje. Prezadovoljan sam!</p>
+                    <h3>Ermin Bravo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+        
+                    <img src="./images/Ibro Kopf Bild.jpg" alt="">
+                    <p>Odlična kvaliteta i svježina! Preporučujem svima.</p>
+                    <h3>Ibro Rebronja</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blogs" id="blogs">
+        <h1 class="heading">Naši <span>Blogovi</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/zauzetidaneobrocibrzo.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>By Ibro Rebronja</a>
+                        <a href="#"><i class="fas fa-calender"></i>22 Septembar 2025</a>
+                    </div>
+                    <h3>5 Jednostavnih Organskih Recepta za Zauzete Dane
+                    <p>Brzi i zdravi obroci sa svježim organskim sastojcima. Savršeno za vaš užurbani ritam.
+                    <a href="#" class="btn">Saznaj Više</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/kakoodabrati.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>By Ibro Rebronja</a>
+                        <a href="#"><i class="fas fa-calender"></i>22 Septembar 2025</a>
+                    </div>
+                    <h3>Kako Odabrati Svježe Voće i Povrće</h3>
+                    <p>Saznajte tajne kako uvijek odabrati najkvalitetniju i najsvježiju hranu.</p>
+                    <a href="#" class="btn">Saznaj Više</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/prednostorganske.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>By Ibro Rebronja</a>
+                        <a href="#"><i class="fas fa-calender"></i>22 Septembar 2025</a>
+                    </div>
+                    <h3>Prednosti Organske Hrane: Prirodno, svježe i zdravo</h3>
+                    <p>Saznajte zašto je organsko voće i povrće bolje za vaše zdravlje i za okoliš.</p>
+                    <a href="#" class="btn">Saznaj Više</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/savjetizakupovinu.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>By Ibro Rebronja</a>
+                        <a href="#"><i class="fas fa-calender"></i>22 Septembar 2025</a>
+                    </div>
+                    <h3>Savjeti za Održivu Kupovinu: Kako birati pametno i odgovorno</h3>
+                    <p>Male promjene u vašoj kupovini mogu napraviti veliki utjecaj na planetu.</p>
+                    <a href="#" class="btn">Saznaj Više</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Zeleni Kutak <i class="fas fa-shopping-basket"></i></h3>
+                <p>Zeleni Kutak - svježe, zeleno, prirodno!</p>
+                <div class="share">
+                    <a href="https://www.facebook.com/IbroRebronja/" target="_blank" rel="noopener noreferrer" class="fab fa-facebook-f"></a>
+                    <a href="https://x.com/IbroRebron18927" target="_blank" rel="noopener noreferrer" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/smhdontask/" target="_blank" rel="noopener noreferrer" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/ibro-rebronja/" target="_blank" rel="noopener noreferrer" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Kontakt Informacije</h3>
+                <a href="tel:+387603205718" class="links"><i class="fas fa-phone"></i>+387 (0)60 320-5718</a>
+                <a href="mailto:rebronjaibro@gmail.com" class="links" style="text-transform: none;"><i class="fas fa-envelope"></i>rebronjaibro@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>Brze Veze</h3>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Features</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Products</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Categories</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Review</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Blogs</a>
+            </div>
+            <div class="box">
+                <h3>Bilten</h3>
+                <p>Preplatite se za najnovije novost</p>
+                <input type="email" placeholder="Unesite svoj Email" class="email">
+                <input type="submit" value="Pretplatiti" class="btn">
+                <img src="./images/payment.jpg" alt="" class="image">
+            </div>
+        </div>
+        <div class="credit">
+            Kreirao <a href="https://github.com/IbroRebronja" style="text-decoration: none;"><span>Ibro Rebronja</span></a> | Sva Prava Zadržana |
+        </div>
+    </section>
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
