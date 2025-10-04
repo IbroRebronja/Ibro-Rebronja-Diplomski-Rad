@@ -741,3 +741,52 @@ a.btn:hover,input.btn:hover
 {
     text-align: center;
 }
+
+.cart-notification {
+  position: fixed;
+  top: 2rem;
+  right: -300px;
+  background: var(--orange);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  box-shadow: var(--box-shadow);
+  z-index: 99999;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.cart-notification.show {
+  right: 2rem;
+  opacity: 1;
+}
+
+.payment-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.payment-popup .popup-content {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.payment-popup .popup-content h3 {
+  margin-bottom: 1rem;
+  color: var(--black);
+}
+
+.payment-popup .popup-content p {
+  color: var(--light-color);
+  margin-bottom: 1.5rem;
+}
