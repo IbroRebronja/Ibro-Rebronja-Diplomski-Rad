@@ -22,6 +22,14 @@ document.querySelector('#menu-btn').onclick=()=>{
     account.classList.remove('active')
 }
 
+let shoppingCart = document.querySelector('.shopping-cart');
+document.querySelector('#cart-btn').onclick = () => {
+    searchForm.classList.remove('active');
+    account.classList.remove('active');
+    navbar.classList.remove('active');
+};
+
+
 window.onscroll =()=>{
     searchForm.classList.remove('active')
     shoppingCart.classList.remove('active')
