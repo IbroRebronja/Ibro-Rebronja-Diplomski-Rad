@@ -58,7 +58,6 @@ var swiper = new Swiper(".product-slider", {
   });
 
 var swiper = new Swiper(".review-slider", {
-    loop: true,
     spaceBetween: 20,
     breakpoints: {
       0: {
