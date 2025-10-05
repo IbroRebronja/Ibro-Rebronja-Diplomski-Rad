@@ -1,27 +1,29 @@
-# Frontend E-commerce Project
+**Frontend E-commerce Projekat**
+**Pregled**
+Ovaj repozitorij prikazuje frontend e-commerce aplikaciju napravljenu pomoću **HTML-a, CSS-a i JavaScript-a**. Projekat omogućava korisnicima da pregledaju proizvode, dodaju više artikala u korpu i prođu kroz proces naplate uz konačni obračun računa. Dizajniran je da pruži čist i korisnički prijatan doživljaj kupovine.
 
-## Overview
-This repository showcases a frontend e-commerce application built with **HTML, CSS, and JavaScript**. The project enables users to explore products, add multiple items to a shopping cart, and proceed through a checkout flow with the final bill calculation. It is designed to provide a clean and user-friendly shopping experience.
+**Ključne funkcionalnosti**
 
-## Key Features
-* Browse and view available products
-* Add items to the shopping cart
-* Update cart contents and quantities
-* Remove products from the cart
-* Automatic calculation of the total price
-* Simple checkout process
+* Pregled i prikaz dostupnih proizvoda
+* Dodavanje artikala u korpu
+* Ažuriranje sadržaja i količina u korpi
+* Uklanjanje proizvoda iz korpe
+* Automatski obračun ukupne cijene
+* Jednostavan proces naplate
 
-## Technologies
-* **HTML**
-* **CSS**
-* **JavaScript**
+**Korištene tehnologije**
 
-## Planned Improvements
-* Database integration for dynamic product management
-* User authentication and account system
-* Order history and tracking functionality
-* Product reviews and rating system
-* Fully responsive design for all devices
+* HTML
+* CSS
+* JavaScript
 
-## Credits
-This project was inspired by the idea of creating a simple, functional e-commerce interface for learning and demonstration purposes.
+**Planirana poboljšanja**
+
+* Integracija baze podataka za dinamičko upravljanje proizvodima
+* Autentifikacija korisnika i sistem korisničkih naloga
+* Istorija narudžbi i funkcionalnost praćenja
+* Recenzije proizvoda i sistem ocjenjivanja
+* Potpuno responzivan dizajn za sve uređaje
+
+**Zasluge**
+Ovaj projekat je inspirisan idejom stvaranja jednostavnog i funkcionalnog e-commerce interfejsa za potrebe učenja i demonstracije.

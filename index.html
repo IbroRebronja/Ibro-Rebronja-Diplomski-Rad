@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>     <!-- -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,9 +13,10 @@
     <title>Diplomski Rad Ibro Rebronja</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
         <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Zeleni Kutak</a>
-
+    <!-- NAVBAR -->
         <nav class="navbar">
             <a href="#home">Početna</a>
             <a href="#features">Prednosti</a>
@@ -24,20 +25,24 @@
             <a href="#review">Recenzije</a>
             <a href="#blogs">Blogovi</a>
         </nav>
+        <!-- Ikonice s desne strane -->
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
             <div class="fas fa-search" id="search-btn"></div>
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
             <div class="fas fa-user" id="login-btn"></div>
         </div>
+        <!-- Ovo je Search form -->
         <form class="search-form">
             <input type="search" id="search-box" placeholder="Pretraži ovdje...">
             <label for="search-box" class="fas fa-search"></label>
         </form>
+            <!-- Ovo je shopping cart tj. korpa -->
             <div class="shopping-cart">
                 <div class="total">Total: € 0/-</div>
                 <a href="#" class="btn">Plaćanje</a>
             </div>
+            <!-- Ovo je forma za prijavu tj. login form -->
         <form class="login-form">
             <h3>Prijavi se</h3>
             <input type="email" class="box" placeholder="Email">
@@ -47,6 +52,7 @@
             <input type="submit" value="Prijavi se" class="btn">
         </form>
     </header>
+    <!-- Sekcija za Tekst na Home page-u tj. pocetnoj stranici -->
     <section class="home" id="home">
         <div class="content">
             <h3>Svježi i <span> Organski</span> proizvodi za vas</h3>
@@ -55,6 +61,7 @@
             <a href="#" class="btn">Kupi Sada</a>
         </div>
     </section>
+    <!-- PREDNOSTI -->
     <section class="features" id="features">
         <h1 class="heading">Naše <span>Prednosti</span></h1>
         <div class="box-container">
@@ -79,13 +86,13 @@
         </div>
     </section>
 
-    <!-- OUR PRODUCTS -->
+    <!-- NASI PRODUKTI -->
     <section class="products" id="products">
         <h1 class="heading">Naši <span>Proizvodi</span></h1>
         <div class="swiper product-slider">
             <div class="swiper-wrapper">
+                <!-- Ovdje pocinju pojedinacne kutije -->
                 <div class="swiper-slide box">
-
                     <img src="./images/grapes.jpg" alt="grapes">
                     <h3>Svježe Grožđe</h3>
                     <div class="price">€50/-</div>
@@ -115,88 +122,6 @@
                     <img src="./images/watermelon.jpg" alt="mango">
                     <h3>Lubenica</h3>
                     <div class="price">€20/-</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="btn">Dodaj u korpu</a>
-                </div>
-                <div class="swiper-slide box">
-                    <img src="./images/mango.jpg" alt="mango">
-                    <h3>Svježi Manga</h3>
-                    <div class="price">€50/-</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="btn">Dodaj u korpu</a>
-                </div>
-                <div class="swiper-slide box">
-                    <img src="./images/mango.jpg" alt="mango">
-                    <h3>Svježi Manga</h3>
-                    <div class="price">€50/-</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="btn">Dodaj u korpu</a>
-                </div>
-                
-            </div>
-        <div class="swiper product-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <img src="./images/grapes.jpg" alt="grapes">
-                    <h3>Fresh Grapes</h3>
-                    <div class="price">€50/-</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="btn">Dodaj u korpu</a>
-                </div>
-                <div class="swiper-slide box">
-                    <img src="./images/guava.jpg" alt="guava">
-                    <h3>Fresh Guava</h3>
-                    <div class="price">€50/-</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="btn">Dodaj u korpu</a>
-                </div>
-                <div class="swiper-slide box">
-                    <img src="./images/mango.jpg" alt="mango">
-                    <h3>Svježi Manga</h3>
-                    <div class="price">€50/-</div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#" class="btn">Dodaj u korpu</a>
-                </div>
-                <div class="swiper-slide box">
-                    <img src="./images/mango.jpg" alt="mango">
-                    <h3>Svježi Manga</h3>
-                    <div class="price">€50/-</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
