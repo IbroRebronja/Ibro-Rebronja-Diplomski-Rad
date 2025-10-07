@@ -1,3 +1,5 @@
+# ENGLISH TRANSLATION
+
 **Frontend E-commerce Project**
 **Overview**
 This repository showcases a frontend e-commerce application built using **HTML, CSS, and JavaScript**. The project allows users to browse products, add multiple items to the cart, and go through the checkout process with a final bill calculation. It is designed to provide a clean and user-friendly shopping experience.
