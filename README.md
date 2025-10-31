@@ -62,3 +62,4 @@ Ovaj repozitorij prikazuje frontend e-commerce aplikaciju napravljenu pomoću **
 
 **Zasluge**
 Ovaj projekat je inspirisan idejom stvaranja jednostavnog i funkcionalnog e-commerce interfejsa za potrebe učenja i demonstracije.
+ 
